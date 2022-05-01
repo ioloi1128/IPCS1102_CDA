@@ -1,0 +1,32 @@
+###conda env###
+conda create --name CDA_1102 python=3.7
+
+# To activate this environment, use
+conda activate CDA_1102
+# To deactivate an active environment, use
+ conda deactivate
+
+conda env list
+
+conda remove --name CDA_1102
+
+###command###
+python --version
+
+###install###
+conda install numpy
+conda install pandas
+conda install xarray dask netCDF4 bottleneck
+conda install matplotlib
+conda install scipy
+conda install cartopy
+conda install seaborn
+
+
+conda install -c pyviz holoviews bokeh
+
+conda install -n CDA_1102_py37 ipykernel --update-deps --force-reinstall
+
+
+###jupyter note book###
+Command Palette (Ctrl+Shift+P) or by creating a new .ipynb file in your workspace.
